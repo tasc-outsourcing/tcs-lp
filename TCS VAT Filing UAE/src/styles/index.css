@@ -1,0 +1,8 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './hubspot-form.css';
+
+html {
+  scroll-behavior: smooth;
+}

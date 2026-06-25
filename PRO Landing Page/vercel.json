@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/uae-pro", "destination": "/index.html" },
+    { "source": "/uae-pro/", "destination": "/index.html" },
+    { "source": "/uae-pro/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/uae-pro/:path*", "destination": "/index.html" }
+  ]
+}

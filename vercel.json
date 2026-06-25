@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/uae-pro/assets/:path*", "destination": "/uae-pro/assets/:path*" },
+    { "source": "/uae-pro", "destination": "/uae-pro/index.html" },
+    { "source": "/uae-pro/", "destination": "/uae-pro/index.html" },
+    { "source": "/uae-pro/:path*", "destination": "/uae-pro/index.html" },
+    { "source": "/uae-vat-filing/assets/:path*", "destination": "/uae-vat-filing/assets/:path*" },
+    { "source": "/uae-vat-filing", "destination": "/uae-vat-filing/index.html" },
+    { "source": "/uae-vat-filing/", "destination": "/uae-vat-filing/index.html" },
+    { "source": "/uae-vat-filing/:path*", "destination": "/uae-vat-filing/index.html" },
+    { "source": "/saudi-business-setup/assets/:path*", "destination": "/saudi-business-setup/assets/:path*" },
+    { "source": "/saudi-business-setup", "destination": "/saudi-business-setup/index.html" },
+    { "source": "/saudi-business-setup/", "destination": "/saudi-business-setup/index.html" },
+    { "source": "/saudi-business-setup/:path*", "destination": "/saudi-business-setup/index.html" }
+  ]
+}

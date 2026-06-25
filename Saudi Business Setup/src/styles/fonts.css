@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* Use Montserrat as the base font across the site */
+:root,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*
+  The UI uses Tailwind arbitrary font classes like font-['Poppins'] and font-['Gotham'].
+  Map those names to Montserrat so typography stays consistent without rewriting every class.
+*/
+@font-face {
+  font-family: 'Poppins';
+  src: local('Montserrat'), local('Montserrat Regular');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Montserrat'), local('Montserrat Regular');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
