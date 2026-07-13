@@ -14,9 +14,9 @@
     { "source": "/saudi-business-setup", "destination": "/saudi-business-setup/index.html" },
     { "source": "/saudi-business-setup/", "destination": "/saudi-business-setup/index.html" },
     { "source": "/saudi-business-setup/:path*", "destination": "/saudi-business-setup/index.html" },
-    { "source": "/ksa-workforce-governance-advisory/assets/:path*", "destination": "/ksa-workforce-governance-advisory/assets/:path*" },
-    { "source": "/ksa-workforce-governance-advisory", "destination": "/ksa-workforce-governance-advisory/index.html" },
-    { "source": "/ksa-workforce-governance-advisory/", "destination": "/ksa-workforce-governance-advisory/index.html" },
-    { "source": "/ksa-workforce-governance-advisory/:path*", "destination": "/ksa-workforce-governance-advisory/index.html" }
+    { "source": "/ksa-workforce-advisory/assets/:path*", "destination": "/ksa-workforce-advisory/assets/:path*" },
+    { "source": "/ksa-workforce-advisory", "destination": "/ksa-workforce-advisory/index.html" },
+    { "source": "/ksa-workforce-advisory/", "destination": "/ksa-workforce-advisory/index.html" },
+    { "source": "/ksa-workforce-advisory/:path*", "destination": "/ksa-workforce-advisory/index.html" }
   ]
 }

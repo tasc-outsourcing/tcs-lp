@@ -1,29 +1,1017 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-55QZ8ZJ');
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KSA Workforce Governance Advisory | TASC Corporate Services</title>
-    <meta
-      name="description"
-      content="Diagnostic-led KSA workforce governance advisory for multinational employers needing clean Qiwa records, stable Nitaqat standing, and local HR compliance alignment."
-    />
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55QZ8ZJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KSA Workforce Governance Advisory | TASC Corporate Services</title>
+  <meta name="description" content="Diagnostic-led KSA workforce governance advisory for multinational employers operating in Saudi Arabia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #003a52;
+      --deep: #012230;
+      --blue: #005f83;
+      --cyan: #05c1f0;
+      --green: #3ee248;
+      --yellow: #ffd100;
+      --soft: #f2f8fa;
+      --line: #dce6ea;
+      --text: #162430;
+      --muted: #5c6b73;
+      --pale: #cfe7f2;
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    input,
+    select,
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1240px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid rgba(220, 230, 234, 0.9);
+    }
+
+    .nav {
+      min-height: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 140px;
+      height: 65px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(0, 58, 82, 0.9) 0%, rgba(0, 58, 82, 0.56) 39%, rgba(0, 58, 82, 0.72) 100%),
+        linear-gradient(90deg, rgba(0, 58, 82, 0.82) 0%, rgba(0, 58, 82, 0.42) 43%, rgba(0, 58, 82, 0.68) 100%),
+        radial-gradient(circle at 48% 48%, rgba(5, 193, 240, 0.12), rgba(0, 58, 82, 0) 38%),
+        url("shutterstock_1224851173 1.png") center 54% / cover;
+      color: #fff;
+    }
+
+    .hero-inner {
+      min-height: 760px;
+      padding: 86px 0 40px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 460px;
+      gap: 54px;
+      align-items: start;
+    }
+
+    .eyebrow {
+      margin: 0 0 22px;
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .hero .eyebrow {
+      color: var(--yellow);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 680px;
+      margin-bottom: 22px;
+      font-size: clamp(42px, 5vw, 64px);
+      line-height: 1.06;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin-bottom: 30px;
+      color: var(--pale);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 24px;
+      border: 0;
+      border-radius: var(--radius);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(90deg, var(--cyan), var(--green));
+    }
+
+    .btn-secondary {
+      color: #fff;
+      border: 1.5px solid rgba(255, 255, 255, 0.42);
+      background: transparent;
+    }
+
+    .form-card {
+      padding: 30px;
+      color: var(--navy);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: 0 26px 60px rgba(1, 34, 48, 0.18);
+    }
+
+    .form-card h2 {
+      margin-bottom: 22px;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .form-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .hubspot-target {
+      min-height: 320px;
+    }
+
+    .hubspot-target .loading-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hubspot-target .hs-form-field {
+      margin-bottom: 14px;
+    }
+
+    .hubspot-target label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .hubspot-target input,
+    .hubspot-target select,
+    .hubspot-target textarea {
+      width: 100% !important;
+      min-height: 43px;
+      padding: 0 12px;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+    }
+
+    .hubspot-target textarea {
+      min-height: 96px;
+      padding-top: 10px;
+    }
+
+    .hubspot-target input[type="submit"],
+    .hubspot-target .hs-button {
+      width: 100%;
+      min-height: 50px;
+      color: #fff;
+      background: linear-gradient(90deg, var(--cyan), var(--green));
+      border: 0;
+      border-radius: 5px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field-wide {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--navy);
+      font-size: 12.5px;
+      font-weight: 800;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 43px;
+      padding: 0 12px;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+    }
+
+    .privacy {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .nitaqat {
+      grid-column: 1 / -1;
+      align-self: end;
+      margin-top: 26px;
+      background: var(--deep);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .bands {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .band {
+      min-height: 70px;
+      padding: 14px 10px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .band strong {
+      display: block;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    .band span {
+      font-size: 11.5px;
+    }
+
+    .band.red { background: #c51615; }
+    .band.yellow { background: #f9ca0b; color: #8a7a3a; }
+    .band.low { background: #3a8243; }
+    .band.mid { background: #43a54b; }
+    .band.high { background: #0ee61e; }
+    .band.platinum { background: #adacb1; color: var(--deep); }
+
+    .nitaqat-note {
+      margin: 0;
+      padding: 18px 20px 22px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-title {
+      max-width: 1080px;
+      margin-bottom: 18px;
+      color: var(--blue);
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      max-width: 1140px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .system-grid {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .system-card,
+    .phase-card,
+    .proof-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+    }
+
+    .system-card {
+      min-height: 255px;
+      padding: 24px 18px 22px;
+      background: #fff;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 22px;
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      background: #e4f3f7;
+      border-radius: 50%;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .platform-logo {
+      width: 108px;
+      height: 108px;
+      margin-bottom: 18px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .platform-logo.qiwa {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 36px;
+    }
+
+    .platform-logo.gosi {
+      width: 107px;
+      height: 43px;
+      margin: 30px 0 55px;
+    }
+
+    .platform-logo.mudad {
+      width: 103px;
+      height: 69px;
+      margin: 18px 0 41px;
+    }
+
+    .platform-logo.muqeem {
+      width: 107px;
+      height: 58px;
+      margin: 24px 0 46px;
+    }
+
+    .asset-icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 22px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .stat-icon {
+      margin: 0 auto 12px;
+    }
+
+    .pillar .asset-icon {
+      width: 68px;
+      height: 68px;
+      margin-bottom: 24px;
+    }
+
+    .proof-card .asset-icon {
+      margin-bottom: 16px;
+    }
+
+    .system-card h3,
+    .phase-card h3 {
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .system-card p,
+    .phase-card p {
+      color: var(--muted);
+    }
+
+    .stats {
+      padding: 72px 0;
+      background: #ffe102;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+      color: var(--blue);
+      text-align: center;
+    }
+
+    .stat-number {
+      margin: 10px 0 6px;
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: clamp(40px, 5vw, 56px);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .what {
+      background: #fff;
+    }
+
+    .pillars {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .pillar h3 {
+      color: var(--blue);
+      font-size: 26px;
+    }
+
+    .engage {
+      background: var(--soft);
+    }
+
+    .phase-grid {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .phase-card {
+      padding: 40px 30px;
+      background: #fff;
+    }
+
+    .phase-card.dark {
+      color: #fff;
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .phase-label {
+      display: inline-flex;
+      margin-bottom: 16px;
+      padding: 5px 12px;
+      color: var(--blue);
+      background: #e4f3f7;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .dark .phase-label {
+      color: var(--yellow);
+      background: rgba(255, 209, 0, 0.16);
+    }
+
+    .dark h3 {
+      color: #fff;
+    }
+
+    .dark p,
+    .dark li {
+      color: #e4f3f7;
+    }
+
+    ul {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-top: 9px;
+      padding-left: 16px;
+      color: var(--text);
+      font-size: 14.5px;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 5px;
+      height: 5px;
+      background: currentColor;
+      border-radius: 50%;
+    }
+
+    .why {
+      color: #fff;
+      background: linear-gradient(180deg, var(--cyan), var(--green));
+    }
+
+    .why .eyebrow,
+    .why .section-title,
+    .why .section-copy {
+      color: #fff;
+    }
+
+    .proof-grid {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .proof-card {
+      min-height: 300px;
+      padding: 30px 26px;
+      color: #fff;
+      background: #005d80;
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .proof-number {
+      margin: 18px 0 4px;
+      font-family: Montserrat, Inter, sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    .proof-card h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .guide {
+      color: var(--blue);
+      background: var(--yellow);
+    }
+
+    .guide-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+      gap: 70px;
+      align-items: center;
+    }
+
+    .guide h2 {
+      color: #005879;
+      font-size: clamp(32px, 4vw, 42px);
+      line-height: 1.18;
+    }
+
+    .guide-checks {
+      display: grid;
+      gap: 18px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .guide-checks div {
+      display: grid;
+      grid-template-columns: 16px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .guide-checks div::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      margin-top: 7px;
+      background: var(--blue);
+      border-radius: 50%;
+    }
+
+    .cta {
+      background: var(--soft);
+    }
+
+    .cta-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 460px;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .site-footer {
+      padding: 38px 0;
+      color: #9fc2ce;
+      background: var(--deep);
+      font-size: 13.5px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    @media (max-width: 1000px) {
+      .hero-inner,
+      .cta-inner,
+      .guide-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .system-grid,
+      .proof-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid,
+      .pillars,
+      .phase-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nitaqat {
+        align-self: start;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 32px, 1240px);
+      }
+
+      .nav {
+        min-height: 78px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-inner {
+        min-height: auto;
+        padding: 58px 0 32px;
+      }
+
+      .actions,
+      .btn {
+        width: 100%;
+      }
+
+      .form-card {
+        padding: 22px;
+      }
+
+      .form-grid,
+      .bands,
+      .system-grid,
+      .stats-grid,
+      .pillars,
+      .phase-grid,
+      .proof-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .band {
+        min-height: 58px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="TASC Corporate Services">
+        <img class="brand-mark" src="tcs 1.png" alt="TASC Corporate Services logo">
+        <span>TASC Corporate Services</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#problem">Problem</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#engage">Engagement</a>
+        <a href="#diagnostic">Diagnostic</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">KSA Workforce Governance Advisory</p>
+          <h1>Your global HR policy is compliant at HQ. Is it compliant in Riyadh?</h1>
+          <p class="hero-copy">A diagnostic-led advisory service for multinational employers, across every sector, who need clean Qiwa records, stable Nitaqat standing, and a governed bridge between global policy and Saudi statutory reality.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#diagnostic">Book a Workforce Governance Diagnostic call</a>
+            <a class="btn btn-secondary" href="#guide">Download the guidebook</a>
+          </div>
+        </div>
+
+        <div class="form-card" aria-label="Request a Workforce Governance Diagnostic call">
+          <h2>Request a Workforce Governance Diagnostic call</h2>
+          <div class="hubspot-target" id="hubspot-contact-form-hero">
+            <p class="loading-note">Loading contact form...</p>
+          </div>
+          <p class="privacy">Your details are reviewed only by the TASC KSA advisory team.</p>
+        </div>
+
+        <div class="nitaqat" aria-label="Nitaqat tier system">
+          <div class="bands">
+            <div class="band red"><strong>RED</strong><span>Blocked visas & services</span></div>
+            <div class="band yellow"><strong><s>YELLOW</s></strong><span>Tier removed in 2026</span></div>
+            <div class="band low"><strong>LOW GREEN</strong><span>Vulnerable to one change</span></div>
+            <div class="band mid"><strong>MID GREEN</strong><span>Core operations intact</span></div>
+            <div class="band high"><strong>HIGH GREEN</strong><span>Full flexibility</span></div>
+            <div class="band platinum"><strong>PLATINUM</strong><span>Priority government access</span></div>
+          </div>
+          <p class="nitaqat-note">The Nitaqat tier system, 2026 structure. The Yellow buffer is gone: a company that used to have room to slip now moves directly into Red.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="container">
+        <p class="eyebrow">The Problem</p>
+        <h2 class="section-title">Your policy is global.<br>Your compliance risk is entirely local.</h2>
+        <p class="section-copy">For multinationals in KSA, workforce risk sits between HQ policy and local execution, spread across five government systems that were never designed to be reconciled by a remote HR function.</p>
+        <div class="system-grid">
+          <article class="system-card">
+            <img class="platform-logo qiwa" src="image 2.png" alt="Qiwa logo">
+            <h3>Qiwa</h3>
+            <p>Contracts, profession codes and the live Saudization calculation.</p>
+          </article>
+          <article class="system-card">
+            <img class="platform-logo nitaqat" src="image 1.png" alt="Nitaqat logo">
+            <h3>Nitaqat</h3>
+            <p>Company and now profession-level quotas across 269 roles.</p>
+          </article>
+          <article class="system-card">
+            <img class="platform-logo gosi" src="image 3.png" alt="GOSI logo">
+            <h3>GOSI</h3>
+            <p>Social insurance registration and salary of record.</p>
+          </article>
+          <article class="system-card">
+            <img class="platform-logo mudad" src="image 4.png" alt="Mudad logo">
+            <h3>Mudad</h3>
+            <p>Wage protection and payment verification.</p>
+          </article>
+          <article class="system-card">
+            <img class="platform-logo muqeem" src="image 5.png" alt="Muqeem logo">
+            <h3>Muqeem</h3>
+            <p>Residency, Iqama and work-permit status.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Key workforce governance figures">
+      <div class="container stats-grid">
+        <div>
+          <img class="asset-icon stat-icon" src="buffer 1.svg" alt="">
+          <div class="stat-number">0</div>
+          <p>Yellow-band buffer left. The tier was removed in 2026.</p>
+        </div>
+        <div>
+          <img class="asset-icon stat-icon" src="pie-chart 1.svg" alt="">
+          <div class="stat-number">269</div>
+          <p>Professions that now carry their own Nitaqat quota.</p>
+        </div>
+        <div>
+          <img class="asset-icon stat-icon" src="quota 1.svg" alt="">
+          <div class="stat-number">370K+</div>
+          <p>MHRSD inspection visits recorded across the Kingdom in the past year.</p>
+        </div>
+        <div>
+          <img class="asset-icon stat-icon" src="regulation 1.svg" alt="">
+          <div class="stat-number">Up to 10x</div>
+          <p>Increase in certain labour-law fines under the 2026 penalty schedule.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="what">
+      <div class="container">
+        <p class="eyebrow">What We Do</p>
+        <h2 class="section-title">We give leadership a defensible, evidence-based view of KSA workforce compliance, and the structure to keep it current.</h2>
+        <p class="section-copy">Our work sits at the intersection of regulatory advisory and on-the-ground execution. We review how an organisation is positioned against Qiwa, Nitaqat, GOSI and Mudad, reconcile global policy against Saudi statutory requirement, and put a governed structure in place to keep the two aligned. The qualifying wage for Saudization credit now stands at SAR 4,000 a month, one of several thresholds that shift the calculation without a single hire changing.</p>
+        <div class="pillars">
+          <article class="pillar">
+            <img class="asset-icon" src="assessment 1.svg" alt="">
+            <h3>Assess</h3>
+            <p>Map the current position across every Saudi government system that touches the workforce, benchmarked against comparable operators.</p>
+          </article>
+          <article class="pillar">
+            <img class="asset-icon" src="documents 1.svg" alt="">
+            <h3>Align</h3>
+            <p>Reconcile global HR policy with Saudi statutory requirement, closing the gap before it becomes exposure.</p>
+          </article>
+          <article class="pillar">
+            <img class="asset-icon" src="approve 1.svg" alt="">
+            <h3>Sustain</h3>
+            <p>Keep that position governed and current, so compliance is a standing state, not a periodic exercise.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="engage" class="engage">
+      <div class="container">
+        <p class="eyebrow">How We Engage</p>
+        <h2 class="section-title">Two phases. One governed outcome.</h2>
+        <div class="phase-grid">
+          <article class="phase-card">
+            <span class="phase-label">Phase A</span>
+            <h3>Workforce Governance Diagnostic</h3>
+            <p>A structured, benchmarked review of Qiwa, GOSI, Mudad and Nitaqat standing.</p>
+            <ul>
+              <li>Gap map, ranked by severity</li>
+              <li>Sector benchmark</li>
+              <li>Prioritised remediation roadmap</li>
+            </ul>
+          </article>
+          <article class="phase-card dark">
+            <span class="phase-label">Phase B</span>
+            <h3>Workforce Governance Office</h3>
+            <p>Ongoing oversight that keeps that position current and defensible.</p>
+            <ul>
+              <li>Portal governance</li>
+              <li>Nitaqat monitoring</li>
+              <li>Regulatory tracking</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <p class="eyebrow">Why TASC Corporate Services</p>
+        <h2 class="section-title">Consulting-grade clarity. Execution-grade ownership.</h2>
+        <p class="section-copy">We understand the advisory layer and the government-portal layer, which is what makes this engagement faster, more practical, and more cost-efficient than a large advisory-only model.</p>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <img class="asset-icon" src="skyline 1.svg" alt="">
+            <div class="proof-number">20+</div>
+            <h3>Years in the GCC</h3>
+            <p>Two decades navigating Saudi regulation on the ground, every day.</p>
+          </article>
+          <article class="proof-card">
+            <img class="asset-icon" src="ksa 1.svg" alt="">
+            <div class="proof-number">150+</div>
+            <h3>Specialists in KSA</h3>
+            <p>Including a dedicated desk of GROs across every government platform.</p>
+          </article>
+          <article class="proof-card">
+            <img class="asset-icon" src="review 1.svg" alt="">
+            <div class="proof-number">10+</div>
+            <h3>Dedicated GRO desk</h3>
+            <p>Operating Qiwa, GOSI, Mudad and Muqeem for retained clients daily.</p>
+          </article>
+          <article class="proof-card">
+            <img class="asset-icon" src="add-user 1.svg" alt="">
+            <div class="proof-number">1</div>
+            <h3>Accountable contact</h3>
+            <p>A single owner for compliance posture, not a rotating case team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="guide">
+      <div class="container guide-inner">
+        <div>
+          <p class="eyebrow">Free Guide</p>
+          <h2>The KSA Workforce Governance Guide for Multinationals</h2>
+          <p>The 2026 edition: what changed under the Developed Nitaqat Programme, where the risk hides across five government systems, and the five checks every multinational should run before its next renewal cycle.</p>
+          <a class="btn btn-primary" href="#guidebook-form">Download the guide</a>
+        </div>
+        <div class="form-card" id="guidebook-form">
+          <h3>Download the guidebook</h3>
+          <div class="hubspot-target" id="hubspot-guidebook-form">
+            <p class="loading-note">Loading guidebook form...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diagnostic" class="cta">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">Request the Diagnostic Scope</p>
+          <h2 class="section-title">Get a clear, benchmarked view of where your KSA workforce is exposed.</h2>
+          <p class="section-copy">Our advisory team reviews every submission and responds with a recommended Phase A scope, sized to your entity structure and headcount. No commitment, no generic sales deck.</p>
+        </div>
+        <div class="form-card" aria-label="Request the diagnostic scope">
+          <h3>Request the diagnostic scope</h3>
+          <div class="hubspot-target" id="hubspot-contact-form-cta">
+            <p class="loading-note">Loading contact form...</p>
+          </div>
+          <p class="privacy">Your details are reviewed only by the TASC KSA advisory team.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>TASC Corporate Services, Government Relations & Workforce Governance Advisory</div>
+      <div>Kingdom of Saudi Arabia | United Arab Emirates</div>
+    </div>
+  </footer>
+  <script charset="utf-8" type="text/javascript" src="https://url.uk.m.mimecastprotect.com/s/h5wjC9gPQc19KBQC0Clfq2fF2"></script>
+  <script>
+    function createHubSpotForm(target, formId) {
+      if (!window.hbspt || !window.hbspt.forms) {
+        return false;
+      }
+
+      window.hbspt.forms.create({
+        portalId: "20309062",
+        formId: formId,
+        region: "na1",
+        target: target
+      });
+      return true;
+    }
+
+    function renderHubSpotForms(attempt) {
+      var contactHeroReady = createHubSpotForm("#hubspot-contact-form-hero", "a3fb2e74-285c-4bf5-b4dc-40313b9154b7");
+      var contactCtaReady = createHubSpotForm("#hubspot-contact-form-cta", "a3fb2e74-285c-4bf5-b4dc-40313b9154b7");
+      var guidebookReady = createHubSpotForm("#hubspot-guidebook-form", "16761939-008a-408a-a7f3-e62ff041378d");
+
+      if (!(contactHeroReady && contactCtaReady && guidebookReady) && attempt < 10) {
+        window.setTimeout(function () {
+          renderHubSpotForms(attempt + 1);
+        }, 300);
+      }
+    }
+
+    window.addEventListener("load", function () {
+      renderHubSpotForms(0);
+    });
+  </script>
+</body>
 </html>
