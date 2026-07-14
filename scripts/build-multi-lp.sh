@@ -37,7 +37,9 @@ npm run build -- --base /ksa-workforce-advisory/
 popd >/dev/null
 
 echo "Copying outputs into combined dist..."
-mkdir -p "$DIST_DIR/uae-pro" "$DIST_DIR/uae-vat-filing" "$DIST_DIR/saudi-business-setup" "$DIST_DIR/ksa-workforce-advisory"
+mkdir -p "$DIST_DIR/assets" "$DIST_DIR/uae-pro" "$DIST_DIR/uae-vat-filing" "$DIST_DIR/saudi-business-setup" "$DIST_DIR/ksa-workforce-advisory"
+cp "$ROOT_DIR/index.html" "$DIST_DIR/index.html"
+cp "$KSA_WORKFORCE_DIR/tcs 1.png" "$DIST_DIR/assets/tcs-logo.png"
 cp -R "$PRO_DIR/dist/." "$DIST_DIR/uae-pro/"
 cp -R "$VAT_DIR/dist/." "$DIST_DIR/uae-vat-filing/"
 cp -R "$SAUDI_DIR/dist/." "$DIST_DIR/saudi-business-setup/"
