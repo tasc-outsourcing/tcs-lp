@@ -30,12 +30,12 @@ export function HeroSection({ onBookConsultation }: HeroSectionProps) {
             Complete Finance Function
           </p>
           <h1 className="font-['Poppins',sans-serif] font-semibold text-[34px] md:text-[48px] xl:text-[54px] leading-[1.08] tracking-[-1.6px]">
-            Your full UAE finance function for{" "}
+            Save{" "}
             <span className="relative inline-block whitespace-nowrap">
-              AED 7,500
+              AED 19,000
               <span className="absolute -bottom-1 left-0 h-[5px] w-full rounded-full bg-[#FFE102]" aria-hidden="true" />
             </span>{" "}
-            a month
+            a year on UAE tax &amp; accounting
           </h1>
           <p className="font-['Poppins',sans-serif] leading-[1.7] text-white/90 text-[15px] md:text-[16px] max-w-[65ch]">
             Bookkeeping, VAT, financial reporting and corporate tax filing. Up to 300 transactions a month, one fixed fee, one invoice.
