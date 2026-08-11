@@ -1,7 +1,6 @@
 import {
   Building2,
   Calculator,
-  ChevronRight,
   Landmark,
 } from "lucide-react";
 
@@ -120,19 +119,16 @@ export function Services() {
                   {cluster.services.map((service, index) => (
                     <div
                       key={service.title}
-                      className={`grid grid-cols-[1fr_auto] items-center gap-5 py-5 ${
+                      className={`py-5 ${
                         index === 0 ? "pt-0" : "border-t border-[#e2e8f0]"
                       }`}
                     >
-                      <div>
-                        <h4 className="text-[16px] font-semibold text-[#005f83]">
-                          {service.title}
-                        </h4>
-                        <p className="mt-1.5 text-[14px] leading-[1.7] text-[#4a5568]">
-                          {service.description}
-                        </p>
-                      </div>
-                      <ChevronRight className="h-5 w-5 text-[#00a9e6]" aria-hidden="true" />
+                      <h4 className="text-[16px] font-semibold text-[#005f83]">
+                        {service.title}
+                      </h4>
+                      <p className="mt-1.5 text-[14px] leading-[1.7] text-[#4a5568]">
+                        {service.description}
+                      </p>
                     </div>
                   ))}
                 </div>
