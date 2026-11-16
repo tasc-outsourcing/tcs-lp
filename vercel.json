@@ -77,6 +77,14 @@
     {
       "source": "/payroll-management-services/",
       "destination": "/payroll-management-services/index.html"
+    },
+    {
+      "source": "/en/thank-you-request-for-proposal/",
+      "destination": "/en/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/ar/thank-you-request-for-proposal/",
+      "destination": "/ar/thank-you-request-for-proposal/index.html"
     }
   ],
   "redirects": [
@@ -93,6 +101,16 @@
     {
       "source": "/payroll-management-services",
       "destination": "/payroll-management-services/",
+      "permanent": false
+    },
+    {
+      "source": "/en/thank-you-request-for-proposal",
+      "destination": "/en/thank-you-request-for-proposal/",
+      "permanent": false
+    },
+    {
+      "source": "/ar/thank-you-request-for-proposal",
+      "destination": "/ar/thank-you-request-for-proposal/",
       "permanent": false
     }
   ]
