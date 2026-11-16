@@ -95,6 +95,10 @@
       "destination": "/ar/book-keeping-ksa/index.html"
     },
     {
+      "source": "/ar/gro-ksa/",
+      "destination": "/ar/gro-ksa/index.html"
+    },
+    {
       "source": "/everything-you-need-to-setup-your-business-in-saudi-arabia/",
       "destination": "/everything-you-need-to-setup-your-business-in-saudi-arabia/index.html"
     },
@@ -145,6 +149,11 @@
     {
       "source": "/ar/book-keeping-ksa",
       "destination": "/ar/book-keeping-ksa/",
+      "permanent": false
+    },
+    {
+      "source": "/ar/gro-ksa",
+      "destination": "/ar/gro-ksa/",
       "permanent": false
     },
     {

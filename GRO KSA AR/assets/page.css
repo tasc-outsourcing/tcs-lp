@@ -1,0 +1,53 @@
+/* GRO Arabic page: small additions to the design system.
+   Every value reads a token from tokens.css. No new colours, sizes or section layouts. */
+
+body.lp{margin:0}
+
+/* Campaign header with a divider, as in the Header component example. */
+.lp-header{border-bottom:1px solid var(--border-primary)}
+
+/* Hero: the offer facts under the main button, and the audience and city tags. */
+.gro-hero-note{margin-top:var(--spacing-lg);font-size:14px;line-height:20px;color:var(--text-inverse)}
+.gro-hero-tags{margin-top:var(--space-24)}
+.lp-hero .lp-actions{margin-top:var(--space-32)}
+
+/* Lines that sit under the form and the steps. */
+.gro-form-note{margin-top:var(--spacing-lg);font-size:12px;line-height:16px;color:var(--text-secondary);text-align:center}
+.gro-form-error{font-size:14px;line-height:20px;color:var(--input-text-critical)}
+.gro-center-note{margin-top:var(--space-24);font-family:var(--font-heading);font-weight:600;font-size:16px;line-height:24px;color:var(--text-brand);text-align:center}
+
+/* Why TASC image: one square image in the split's second column. */
+.gro-why-media{aspect-ratio:1/1;max-width:520px;width:100%;justify-self:center}
+
+/* Arabic readability: the checklist is 12px in the system; sentences here read better at the body size. */
+.lp:lang(ar) .lp-checklist li{font-size:16px;line-height:24px;align-items:flex-start}
+.lp:lang(ar) .lp-checklist li .lp-icon{margin-top:4px}
+.lp-checklist b{font-weight:600}
+
+.gro-banner-section{padding-top:0}
+
+/* ---------- HubSpot form (raw HTML embed, css: "") ----------
+   bundle.css styles the inputs, labels and button. These rules lay out the rows. */
+.lp-form .hs-form fieldset.form-columns-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--spacing-lg)}
+.lp-form .hs-form fieldset.form-columns-2:has(.hs_phone){grid-template-columns:1fr}
+.lp-form .hs-form fieldset[class] .hs-form-field{width:auto;float:none}
+.lp-form .hs-form fieldset .hs-form-field .input{margin:0}
+.lp-form .hs-form fieldset[class] .hs-input:not([type=checkbox]):not([type=radio]){width:100%}
+.lp-form .hs-form select.hs-input{appearance:none;-webkit-appearance:none;padding-inline-end:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23121d21'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:20px;background-position:left 12px center}
+/* HubSpot gives the phone wrapper the hs-input class too; strip the input look from the wrapper. */
+.lp-form .hs-form fieldset[class] div.hs-input.hs-fieldtype-intl-phone{display:flex;gap:var(--spacing-md);height:auto;padding:0;border:0;border-radius:0;background:none}
+.lp-form .hs-form fieldset[class] .hs-fieldtype-intl-phone select.hs-input{width:45%;flex:none}
+.lp-form .hs-form fieldset[class] .hs-fieldtype-intl-phone input.hs-input{flex:1;min-width:0}
+.lp-form .hs-form input[type=email],.lp-form .hs-form input[type=tel]{direction:ltr;text-align:left}
+.lp-form .hs-form input[type=email]:placeholder-shown,.lp-form .hs-form input[type=tel]:placeholder-shown{direction:rtl;text-align:right}
+.lp-form .hs-form ::placeholder{color:var(--input-text-placeholder);font-weight:500}
+.lp-form .hs-form .hs-error-msgs{list-style:none;padding:0}
+.lp-form .hs-form .hs-error-msg{font-family:var(--font-heading);font-weight:500;font-size:12px;line-height:16px;color:var(--input-text-critical)}
+.lp-form .hs-form .hs_submit{margin-top:var(--space-24)}
+.lp-form .hs-form .actions{margin:0;padding:0}
+.lp-form .submitted-message{font-family:var(--font-heading);font-weight:600;font-size:16px;line-height:24px;color:var(--text-brand)}
+.lp-form .hs_error_rollup{margin-top:var(--spacing-lg)}
+
+@media (max-width:760px){
+  .lp-header .lp-btn{padding-inline:var(--spacing-lg)}
+}

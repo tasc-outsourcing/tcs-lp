@@ -65,6 +65,8 @@ mkdir -p "$DIST_DIR/book-keeping-ksa"
 cp -R "$ROOT_DIR/Bookkeeping KSA/." "$DIST_DIR/book-keeping-ksa/"
 mkdir -p "$DIST_DIR/ar/book-keeping-ksa"
 cp -R "$ROOT_DIR/Bookkeeping KSA AR/." "$DIST_DIR/ar/book-keeping-ksa/"
+mkdir -p "$DIST_DIR/ar/gro-ksa"
+cp -R "$ROOT_DIR/GRO KSA AR/." "$DIST_DIR/ar/gro-ksa/"
 mkdir -p "$DIST_DIR/everything-you-need-to-setup-your-business-in-saudi-arabia"
 cp -R "$ROOT_DIR/KSA Business Setup Guide/." "$DIST_DIR/everything-you-need-to-setup-your-business-in-saudi-arabia/"
 

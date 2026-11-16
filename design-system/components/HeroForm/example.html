@@ -1,0 +1,37 @@
+<!-- @dsCard group="Heroes" height=720 width=1440 -->
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HeroForm — TASC Landing Page Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../../bundle.css">
+<style>html,body{margin:0}.pv{padding:32px}</style>
+</head>
+<body>
+<div class="lp">
+<section class="lp-hero lp-hero--image">
+  <div class="lp-hero__bg"><div class="lp-slot" style="height:100%;align-items:flex-end;justify-content:flex-start;padding:16px">Background photo 1440 × 720</div></div>
+  <span class="lp-glow" style="inset-inline-start:35%;top:71px"></span>
+  <div>
+    <nav aria-label="Breadcrumb"><ol class="lp-breadcrumbs"><li><a href="#">Home</a></li><li aria-current="page">The Best recruitment agency in the UAE</li></ol></nav>
+    <h1 class="lp-hero__title">The Best recruitment agency in the UAE</h1>
+    <p class="lp-hero__text">TASC is one of the region's most preferred staffing and HR partners — hiring and managing associates with world-class service, backed by an industry-leading 74.7% NPS.</p>
+  </div>
+  <form class="lp-form lp-hero__aside" id="form">
+    <div class="lp-form__head"><h2 class="lp-form__title">Work with the top recruitment agency in the UAE</h2></div>
+    <div class="lp-form__body">
+      <div class="lp-field"><label class="lp-label" for="h1">Full name<span class="lp-req">*</span></label><input class="lp-input" id="h1" placeholder="Full Name"></div>
+      <div class="lp-field"><label class="lp-label" for="h2">Your Email<span class="lp-req">*</span></label><input class="lp-input" id="h2" placeholder="you@company.com"></div>
+      <div class="lp-field"><label class="lp-label" for="h3">Phone Number<span class="lp-req">*</span></label><div class="lp-phone"><select class="lp-select" aria-label="Country code"><option>+971</option></select><input class="lp-input" id="h3" placeholder="50 123 4567"></div></div>
+      <div class="lp-field"><label class="lp-label" for="h4">What do you need?<span class="lp-req">*</span></label><select class="lp-select" id="h4" required><option value="">Select what do you need?</option></select></div>
+    </div>
+    <div class="lp-form__foot"><button class="lp-btn lp-btn--block">Send enquiry</button></div>
+  </form>
+</section>
+</div>
+</body>
+</html>

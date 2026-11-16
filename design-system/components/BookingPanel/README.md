@@ -1,0 +1,27 @@
+Meeting scheduler frame: consultant bar, calendar and time slots, with a confirm button.
+
+**Figma source:** T17B CTA Landing / Booking › Section (4807:174008)
+
+## Rules
+
+- A white 16px-radius card (980px) with a teal bar naming the consultant and the call type, then a calendar and a grey slots column.
+- **In production the calendar is the HubSpot meetings embed.** Put the embed in `.lp-booking__body` (add `.lp-booking__embed` to give it height) and keep the teal bar above it. The static calendar markup here documents the look for a custom build: available days are bordered, the chosen day is teal, slots are light-blue 48px buttons, confirm is yellow.
+- Follow with three step cards ("Once you have picked a time") and the full footer.
+
+## Markup
+
+```html
+<section class="lp-band" style="text-align:center">
+  <div class="lp-container">
+    <h2 class="lp-title">Choose a <span class="lp-hl">time</span></h2><p class="lp-lead">Live availability, shown in your timezone. Prefer not to use the calendar? The direct options are just below.</p>
+    <div class="lp-booking">
+      <div class="lp-booking__bar"><b>Layla Haddad</b><span>Discovery Call · 30 min · Phone / MS Teams</span></div>
+      <div class="lp-booking__body">
+        <div class="lp-cal"><div class="lp-cal__nav"><button aria-label="Previous month"><span class="lp-icon lp-i-caret-left lp-icon--flip" aria-hidden="true"></span></button><span>June 2026</span><button aria-label="Next month"><span class="lp-icon lp-i-caret-right lp-icon--flip" aria-hidden="true"></span></button></div>
+          <div class="lp-cal__grid"><span class="lp-cal__dow">S</span><span class="lp-cal__dow">M</span><span class="lp-cal__dow">T</span><span class="lp-cal__dow">W</span><span class="lp-cal__dow">T</span><span class="lp-cal__dow">F</span><span class="lp-cal__dow">S</span><button class="lp-cal__day" disabled>31</button><button class="lp-cal__day">1</button><button class="lp-cal__day">2</button><button class="lp-cal__day">3</button><button class="lp-cal__day">4</button><button class="lp-cal__day">5</button><button class="lp-cal__day" disabled>6</button><button class="lp-cal__day" disabled>7</button><button class="lp-cal__day">8</button><button class="lp-cal__day" aria-pressed="true">9</button><button class="lp-cal__day">10</button><button class="lp-cal__day">11</button><button class="lp-cal__day">12</button><button class="lp-cal__day" disabled>13</button><button class="lp-cal__day" disabled>14</button><button class="lp-cal__day">15</button><button class="lp-cal__day">16</button><button class="lp-cal__day">17</button><button class="lp-cal__day">18</button><button class="lp-cal__day">19</button><button class="lp-cal__day" disabled>20</button><button class="lp-cal__day" disabled>21</button><button class="lp-cal__day">22</button><button class="lp-cal__day">23</button><button class="lp-cal__day">24</button><button class="lp-cal__day">25</button><button class="lp-cal__day">26</button><button class="lp-cal__day" disabled>27</button><button class="lp-cal__day" disabled>28</button><button class="lp-cal__day">29</button><button class="lp-cal__day">30</button></div></div>
+        <div class="lp-slots"><p class="lp-slots__title">Tue, 9 June</p><div class="lp-slots__list"><button class="lp-slot-btn">09:30</button><button class="lp-slot-btn" aria-pressed="true">11:00</button><button class="lp-slot-btn">14:00</button><button class="lp-slot-btn">16:30</button></div><p class="lp-slots__picked">Selected: <b>Tue, 9 June · 11:00 GST</b></p><button class="lp-btn lp-btn--secondary lp-btn--block">Confirm this time</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+```
