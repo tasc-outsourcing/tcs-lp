@@ -60,4 +60,16 @@ mkdir -p "$DIST_DIR/en/thank-you-request-for-proposal" "$DIST_DIR/ar/thank-you-r
 cp -R "$THANK_YOU_DIR/en/." "$DIST_DIR/en/thank-you-request-for-proposal/"
 cp -R "$THANK_YOU_DIR/ar/." "$DIST_DIR/ar/thank-you-request-for-proposal/"
 
+echo "Copying KSA pages moved from lp.tascoutsourcing.sa / marketing.tascoutsourcing.com..."
+mkdir -p "$DIST_DIR/book-keeping-ksa"
+cp -R "$ROOT_DIR/Bookkeeping KSA/." "$DIST_DIR/book-keeping-ksa/"
+mkdir -p "$DIST_DIR/ar/book-keeping-ksa"
+cp -R "$ROOT_DIR/Bookkeeping KSA AR/." "$DIST_DIR/ar/book-keeping-ksa/"
+mkdir -p "$DIST_DIR/ksa-business-setup"
+cp -R "$ROOT_DIR/KSA Business Setup RHQ/." "$DIST_DIR/ksa-business-setup/"
+mkdir -p "$DIST_DIR/saudi-business-visa"
+cp -R "$ROOT_DIR/Saudi Business Visa/." "$DIST_DIR/saudi-business-visa/"
+mkdir -p "$DIST_DIR/everything-you-need-to-setup-your-business-in-saudi-arabia"
+cp -R "$ROOT_DIR/KSA Business Setup Guide/." "$DIST_DIR/everything-you-need-to-setup-your-business-in-saudi-arabia/"
+
 echo "Multi-LP build complete."

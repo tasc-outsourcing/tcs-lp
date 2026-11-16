@@ -85,6 +85,26 @@
     {
       "source": "/ar/thank-you-request-for-proposal/",
       "destination": "/ar/thank-you-request-for-proposal/index.html"
+    },
+    {
+      "source": "/book-keeping-ksa/",
+      "destination": "/book-keeping-ksa/index.html"
+    },
+    {
+      "source": "/ar/book-keeping-ksa/",
+      "destination": "/ar/book-keeping-ksa/index.html"
+    },
+    {
+      "source": "/ksa-business-setup/",
+      "destination": "/ksa-business-setup/index.html"
+    },
+    {
+      "source": "/saudi-business-visa/",
+      "destination": "/saudi-business-visa/index.html"
+    },
+    {
+      "source": "/everything-you-need-to-setup-your-business-in-saudi-arabia/",
+      "destination": "/everything-you-need-to-setup-your-business-in-saudi-arabia/index.html"
     }
   ],
   "redirects": [
@@ -111,6 +131,31 @@
     {
       "source": "/ar/thank-you-request-for-proposal",
       "destination": "/ar/thank-you-request-for-proposal/",
+      "permanent": false
+    },
+    {
+      "source": "/book-keeping-ksa",
+      "destination": "/book-keeping-ksa/",
+      "permanent": false
+    },
+    {
+      "source": "/ar/book-keeping-ksa",
+      "destination": "/ar/book-keeping-ksa/",
+      "permanent": false
+    },
+    {
+      "source": "/ksa-business-setup",
+      "destination": "/ksa-business-setup/",
+      "permanent": false
+    },
+    {
+      "source": "/saudi-business-visa",
+      "destination": "/saudi-business-visa/",
+      "permanent": false
+    },
+    {
+      "source": "/everything-you-need-to-setup-your-business-in-saudi-arabia",
+      "destination": "/everything-you-need-to-setup-your-business-in-saudi-arabia/",
       "permanent": false
     }
   ]
