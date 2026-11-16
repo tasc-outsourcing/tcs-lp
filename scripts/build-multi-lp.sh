@@ -10,6 +10,7 @@ KSA_WORKFORCE_DIR="$ROOT_DIR/KSA Workforce Governance Advisory"
 PAYROLL_OUT_DIR="$ROOT_DIR/Payroll Outsourcing"
 GRO_DIR="$ROOT_DIR/GRO Services"
 PAYROLL_MGMT_DIR="$ROOT_DIR/Payroll Management Services"
+THANK_YOU_DIR="$ROOT_DIR/Thank You RFP"
 
 echo "Cleaning combined dist..."
 rm -rf "$DIST_DIR"
@@ -53,5 +54,10 @@ mkdir -p "$DIST_DIR/payroll-outsourcing" "$DIST_DIR/gro-services" "$DIST_DIR/pay
 cp -R "$PAYROLL_OUT_DIR/." "$DIST_DIR/payroll-outsourcing/"
 cp -R "$GRO_DIR/." "$DIST_DIR/gro-services/"
 cp -R "$PAYROLL_MGMT_DIR/." "$DIST_DIR/payroll-management-services/"
+
+echo "Copying thank-you pages (en, ar)..."
+mkdir -p "$DIST_DIR/en/thank-you-request-for-proposal" "$DIST_DIR/ar/thank-you-request-for-proposal"
+cp -R "$THANK_YOU_DIR/en/." "$DIST_DIR/en/thank-you-request-for-proposal/"
+cp -R "$THANK_YOU_DIR/ar/." "$DIST_DIR/ar/thank-you-request-for-proposal/"
 
 echo "Multi-LP build complete."
