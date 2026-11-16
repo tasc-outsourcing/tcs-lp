@@ -95,14 +95,6 @@
       "destination": "/ar/book-keeping-ksa/index.html"
     },
     {
-      "source": "/ksa-business-setup/",
-      "destination": "/ksa-business-setup/index.html"
-    },
-    {
-      "source": "/saudi-business-visa/",
-      "destination": "/saudi-business-visa/index.html"
-    },
-    {
       "source": "/everything-you-need-to-setup-your-business-in-saudi-arabia/",
       "destination": "/everything-you-need-to-setup-your-business-in-saudi-arabia/index.html"
     }
@@ -141,16 +133,6 @@
     {
       "source": "/ar/book-keeping-ksa",
       "destination": "/ar/book-keeping-ksa/",
-      "permanent": false
-    },
-    {
-      "source": "/ksa-business-setup",
-      "destination": "/ksa-business-setup/",
-      "permanent": false
-    },
-    {
-      "source": "/saudi-business-visa",
-      "destination": "/saudi-business-visa/",
       "permanent": false
     },
     {
