@@ -48,6 +48,12 @@ body.lp{margin:0}
 .lp-form .submitted-message{font-family:var(--font-heading);font-weight:600;font-size:16px;line-height:24px;color:var(--text-brand)}
 .lp-form .hs_error_rollup{margin-top:var(--spacing-lg)}
 
+/* Portal logos: single-colour band as the LogoStrip rules ask. Only six logos, so no edge fade;
+   without the mask, multiply drops the white backgrounds of the PNGs. */
+.gro-portal-logos{-webkit-mask-image:none;mask-image:none}
+.gro-portal-logos img{max-width:80px;max-height:80px;filter:grayscale(1);mix-blend-mode:multiply;opacity:.85}
+
 @media (max-width:760px){
+  .gro-portal-logos{flex-wrap:wrap}
   .lp-header .lp-btn{padding-inline:var(--spacing-lg)}
 }
