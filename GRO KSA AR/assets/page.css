@@ -51,7 +51,7 @@ body.lp{margin:0}
 /* Portal logos: single-colour band as the LogoStrip rules ask. Only six logos, so no edge fade;
    without the mask, multiply drops the white backgrounds of the PNGs. */
 .gro-portal-logos{-webkit-mask-image:none;mask-image:none}
-.gro-portal-logos img{max-width:80px;max-height:80px;filter:grayscale(1);mix-blend-mode:multiply;opacity:.85}
+.gro-portal-logos img{max-width:110px;max-height:80px;width:auto;height:auto;filter:grayscale(1);mix-blend-mode:multiply;opacity:.85}
 
 @media (max-width:760px){
   .gro-portal-logos{flex-wrap:wrap}
