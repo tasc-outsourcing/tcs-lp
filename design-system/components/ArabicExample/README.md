@@ -1,0 +1,41 @@
+The hero and a card row rendered right-to-left in Arabic.
+
+**Figma source:** Home Page Arabic, Solution Arabic, Industries Arabic pages
+
+## Rules
+
+- Set `dir="rtl"` and `lang="ar"` on `<html>`. Every component uses logical CSS properties, so columns, padding, carets and the split layouts mirror on their own. No separate Arabic stylesheet.
+- **Typeface:** the Figma Arabic pages keep Montserrat and Inter assigned, and neither has Arabic glyphs. This system adds IBM Plex Sans Arabic as the fallback in both font stacks. Treat that choice as provisional until brand confirms an Arabic typeface.
+- Arabic headings get a taller line height (1.35) and no forced capitalisation.
+- Keep email addresses, phone numbers and URLs left-to-right (`dir="ltr"` on the input). Western digits throughout, matching the Figma Arabic pages.
+- Directional icons (carets, arrows) take `lp-icon--flip`. Logos, ticks and the gradient direction do not flip.
+- The sample copy here is placeholder Arabic for layout only. All Arabic copy needs a native review before launch.
+
+## Markup
+
+```html
+<div dir="rtl" lang="ar" class="lp">
+<section class="lp-hero lp-hero--image" style="min-height:560px">
+  <div class="lp-hero__bg"><div class="lp-slot" style="height:100%"></div></div>
+  <div>
+    <nav aria-label="مسار التنقل"><ol class="lp-breadcrumbs"><li><a href="#">الرئيسية</a></li><li aria-current="page">أفضل وكالة توظيف في الإمارات</li></ol></nav>
+    <h1 class="lp-hero__title">أفضل وكالة توظيف في الإمارات</h1>
+    <p class="lp-hero__text">تاسك من أكثر شركاء التوظيف والموارد البشرية تفضيلاً في المنطقة، نوظّف وندير الكفاءات بخدمة عالمية المستوى.</p>
+  </div>
+  <form class="lp-form lp-hero__aside">
+    <div class="lp-form__head"><h2 class="lp-form__title">اعمل مع أفضل وكالة توظيف في الإمارات</h2></div>
+    <div class="lp-form__body">
+      <div class="lp-field"><label class="lp-label" for="r1">الاسم الكامل<span class="lp-req">*</span></label><input class="lp-input" id="r1" placeholder="الاسم الكامل"></div>
+      <div class="lp-field"><label class="lp-label" for="r2">البريد الإلكتروني<span class="lp-req">*</span></label><input class="lp-input" id="r2" dir="ltr" placeholder="you@company.com" style="text-align:right"></div>
+      <div class="lp-field"><label class="lp-label" for="r3">ما الذي تحتاجه؟<span class="lp-req">*</span></label><select class="lp-select" id="r3" required><option value="">اختر الخدمة</option></select></div>
+    </div>
+    <div class="lp-form__foot"><button class="lp-btn lp-btn--block">إرسال الطلب</button></div>
+  </form>
+</section>
+<section class="lp-section lp-section--soft" style="padding-block:56px"><div class="lp-container"><div class="lp-grid lp-grid--3">
+  <div class="lp-card"><span class="lp-icon lp-i-users-four lp-icon--32 lp-icon--grad lp-card__icon" aria-hidden="true"></span><h3 class="lp-card__title">التوظيف بالعقود</h3><p class="lp-card__text">حلول توظيف شاملة تلبي الاحتياجات الفورية والمستقبلية.</p></div>
+  <div class="lp-card"><span class="lp-icon lp-i-user-check lp-icon--32 lp-icon--grad lp-card__icon" aria-hidden="true"></span><h3 class="lp-card__title">التوظيف الدائم</h3><p class="lp-card__text">استقطاب أفضل الكفاءات من الأسواق المحلية والدولية.</p></div>
+  <div class="lp-card"><span class="lp-icon lp-i-credit-card lp-icon--32 lp-icon--grad lp-card__icon" aria-hidden="true"></span><h3 class="lp-card__title">الرواتب وخدمات صاحب العمل</h3><p class="lp-card__text">وظّف وادفع رواتب فريقك دون تأسيس كيان محلي.</p></div>
+</div></div></section>
+</div>
+```

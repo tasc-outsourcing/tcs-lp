@@ -1,0 +1,32 @@
+<!-- @dsCard group="Sections" height=1100 width=1440 -->
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabsPanel — TASC Landing Page Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../../bundle.css">
+<style>html,body{margin:0}.pv{padding:32px}</style>
+</head>
+<body>
+<div class="lp">
+<section class="lp-section">
+  <div class="lp-container">
+    <div class="lp-head"><h2 class="lp-title">Explore Other <span class="lp-hl">Industries We Serve</span></h2><p class="lp-lead">Get clear, concise insights on Saudi staffing — from costs to Saudization strategies.</p></div>
+    <div class="lp-tabs" role="tablist" style="margin-top:24px"><button class="lp-tab" role="tab" aria-selected="true">Commercial aviation</button><button class="lp-tab" role="tab" aria-selected="false">Airlines &amp; MRO</button><button class="lp-tab" role="tab" aria-selected="false">Ground handling</button><button class="lp-tab" role="tab" aria-selected="false">Aviation Manufacturing</button><button class="lp-tab" role="tab" aria-selected="false">Aviation OEMs</button><button class="lp-tab" role="tab" aria-selected="false">Dealerships &amp; aftersales</button></div>
+    <div class="lp-tabpanel" role="tabpanel">
+      <div><h3 class="lp-tabpanel__title">Commercial aviation</h3><p class="lp-tabpanel__text">Cabin crew, ground operations and airport-facing roles for commercial carriers, vetted for the certifications and background checks the industry requires.</p><div class="lp-actions"><a class="lp-btn lp-btn--sm" href="#form">Talk to our team</a></div></div>
+      <div class="lp-media"><div class="lp-slot" style="height:100%">Image 498 × 380</div></div>
+    </div>
+    <div class="lp-cta-strip" style="margin-top:56px"><span class="lp-glow" style="width:323px;height:280px;filter:blur(40px);inset-inline-end:-30px;top:-99px"></span><div><p class="lp-cta-strip__title">Don't See Your Industry? We've Got You Covered!</p><p class="lp-cta-strip__text">Our diverse talent network spans every sector. Let's discuss your specific industry needs.</p></div><a class="lp-btn lp-btn--sm lp-btn--secondary" href="#form">Talk to our contract staffing team</a></div>
+  </div>
+</section>
+</div>
+<script>
+document.querySelectorAll('.lp-tabs').forEach(function(b){b.addEventListener('click',function(e){var t=e.target.closest('[role=tab]');if(!t)return;b.querySelectorAll('[role=tab]').forEach(function(x){x.setAttribute('aria-selected',x===t)});var p=b.parentNode.querySelector('.lp-tabpanel__title');if(p)p.textContent=t.textContent})});
+</script>
+</body>
+</html>
