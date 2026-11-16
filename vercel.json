@@ -105,6 +105,10 @@
     {
       "source": "/saudi-business-visa/",
       "destination": "/saudi-business-visa/index.html"
+    },
+    {
+      "source": "/en/thank-you-download/",
+      "destination": "/en/thank-you-download/index.html"
     }
   ],
   "redirects": [
@@ -156,6 +160,11 @@
     {
       "source": "/saudi-business-visa",
       "destination": "/saudi-business-visa/",
+      "permanent": false
+    },
+    {
+      "source": "/en/thank-you-download",
+      "destination": "/en/thank-you-download/",
       "permanent": false
     }
   ]
