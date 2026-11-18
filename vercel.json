@@ -99,6 +99,10 @@
       "destination": "/ar/gro-ksa/index.html"
     },
     {
+      "source": "/ar/gro-ksa/thank-you/",
+      "destination": "/ar/gro-ksa/thank-you/index.html"
+    },
+    {
       "source": "/everything-you-need-to-setup-your-business-in-saudi-arabia/",
       "destination": "/everything-you-need-to-setup-your-business-in-saudi-arabia/index.html"
     },
@@ -154,6 +158,11 @@
     {
       "source": "/ar/gro-ksa",
       "destination": "/ar/gro-ksa/",
+      "permanent": false
+    },
+    {
+      "source": "/ar/gro-ksa/thank-you",
+      "destination": "/ar/gro-ksa/thank-you/",
       "permanent": false
     },
     {
