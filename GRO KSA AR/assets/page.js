@@ -171,6 +171,7 @@
       onFormSubmitted: function () {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: SUBMIT_EVENT });
+        window.setTimeout(function () { window.location.href = "/ar/gro-ksa/thank-you/"; }, 400);
       }
     });
   }
