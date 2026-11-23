@@ -117,6 +117,10 @@
     {
       "source": "/en/thank-you-download/",
       "destination": "/en/thank-you-download/index.html"
+    },
+    {
+      "source": "/thank-you-candidate/",
+      "destination": "/thank-you-candidate/index.html"
     }
   ],
   "redirects": [
@@ -183,6 +187,11 @@
     {
       "source": "/en/thank-you-download",
       "destination": "/en/thank-you-download/",
+      "permanent": false
+    },
+    {
+      "source": "/thank-you-candidate",
+      "destination": "/thank-you-candidate/",
       "permanent": false
     }
   ]
