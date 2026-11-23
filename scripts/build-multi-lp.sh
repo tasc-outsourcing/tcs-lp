@@ -79,4 +79,7 @@ cp -R "$ROOT_DIR/Saudi Business Visa/." "$DIST_DIR/saudi-business-visa/"
 mkdir -p "$DIST_DIR/en/thank-you-download"
 cp -R "$ROOT_DIR/Thank You Download/en/." "$DIST_DIR/en/thank-you-download/"
 
+mkdir -p "$DIST_DIR/thank-you-candidate"
+cp -R "$ROOT_DIR/Thank You Candidate/." "$DIST_DIR/thank-you-candidate/"
+
 echo "Multi-LP build complete."
