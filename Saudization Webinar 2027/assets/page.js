@@ -36,7 +36,10 @@
   // "submit": on a valid submit, push webinar_registration to the dataLayer, then post to Zoho
   //   once GTM calls back (or after 2 seconds). Zoho shows its own confirmation page.
   // "thank-you": post with returnURL = THANK_YOU_URL and push webinar_registration on the
-  //   thank-you page instead. Switch only after a live test shows Zoho honours a custom returnURL.
+  //   thank-you page instead. Not usable as things stand: a live test on 28 Nov 2026 showed Zoho
+  //   ignores a custom returnURL and shows its own confirmation page. Zoho's own setting
+  //   "Redirect registrants to a custom page after registration" can send people to the
+  //   thank-you page without changing anything here.
   var CONVERSION_ON = "submit";
   var ZOHO_RETURN_URL = "https://webinar.zoho.com/postregister";
   var THANK_YOU_URL = "https://lp.tasccorporateservices.com/saudization-webinar-2027/thank-you/";

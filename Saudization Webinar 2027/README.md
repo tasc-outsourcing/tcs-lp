@@ -108,10 +108,10 @@ The pages push events to `window.dataLayer`; GTM decides which tags fire. No tag
 
 `CONVERSION_ON` in `assets/page.js` has two settings:
 
-- `'submit'` (the default until Zoho's redirect is tested). `returnURL` stays `https://webinar.zoho.com/postregister`, so Zoho shows its own confirmation page. On a valid submit the page disables the button, pushes `webinar_registration` with an `eventCallback` and `eventTimeout: 2000`, then posts the form once, either when GTM reports its tags have fired or after 2 seconds, whichever comes first. If GTM is blocked, the form still posts after 2 seconds.
+- `'submit'` (the setting in use). `returnURL` stays `https://webinar.zoho.com/postregister`, so Zoho shows its own confirmation page. On a valid submit the page disables the button, pushes `webinar_registration` with an `eventCallback` and `eventTimeout: 2000`, then posts the form once, either when GTM reports its tags have fired or after 2 seconds, whichever comes first. If GTM is blocked, the form still posts after 2 seconds.
 - `'thank-you'`. `returnURL` is set to `https://lp.tasccorporateservices.com/saudization-webinar-2027/thank-you/` and the form posts straight away. The thank-you page pushes `webinar_registration` with the tracker saved in `sessionStorage`, once per session (key `tcsWebinarConverted`).
 
-Switch to `'thank-you'` only after a live test registration shows Zoho redirecting to the thank-you page. The GTM trigger is the same custom event in both modes, so no GTM change is needed when you switch.
+Keep `'submit'`. A live test registration on 28 Nov 2026 posted with `returnURL` set to the thank-you page, and Zoho ignored it and showed its own confirmation page. Zoho Webinar has its own setting, Registration Setup > Other Configurations > "Redirect registrants to a custom page after registration". If that is turned on with the thank-you page address, registrants land on the thank-you page with no code change here, and `webinar_registration` still fires on submit. The GTM trigger is the same custom event in both modes.
 
 The GTM setup steps (LinkedIn conversion, Meta `Lead`, GA4) and the test registration log are kept with the campaign files, not in this public repo.
 
