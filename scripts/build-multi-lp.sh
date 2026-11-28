@@ -82,4 +82,10 @@ cp -R "$ROOT_DIR/Thank You Download/en/." "$DIST_DIR/en/thank-you-download/"
 mkdir -p "$DIST_DIR/thank-you-candidate"
 cp -R "$ROOT_DIR/Thank You Candidate/." "$DIST_DIR/thank-you-candidate/"
 
+echo "Copying saudization-webinar-2027 (webinar LP and thank-you page)..."
+mkdir -p "$DIST_DIR/saudization-webinar-2027"
+cp -R "$ROOT_DIR/Saudization Webinar 2027/." "$DIST_DIR/saudization-webinar-2027/"
+# The page README and unit tests stay in the repo; they are not served.
+rm -rf "$DIST_DIR/saudization-webinar-2027/README.md" "$DIST_DIR/saudization-webinar-2027/tests"
+
 echo "Multi-LP build complete."

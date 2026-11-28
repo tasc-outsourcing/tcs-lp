@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TASC Corporate Services//Saudization webinar 2027//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:saudization-webinar-2027-1027584812@lp.tasccorporateservices.com
+DTSTAMP:20261128T000000Z
+DTSTART:20261215T080000Z
+DTEND:20261215T090000Z
+SUMMARY:Saudization changes you need to know for 2027
+DESCRIPTION:Your personal joining link is in your Zoho Webinar registration
+  email. Free live webinar from TASC Corporate Services: 11:00 KSA (12:00 U
+ AE)\, 45 minutes plus live Q&A.
+LOCATION:Online (Zoho Webinar)
+URL:https://lp.tasccorporateservices.com/saudization-webinar-2027/
+END:VEVENT
+END:VCALENDAR
