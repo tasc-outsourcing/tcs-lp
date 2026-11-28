@@ -135,3 +135,17 @@ body.lp{margin:0}
   /* Phones: one fact per row, so each value stays on one line. */
   .wb-facts{grid-template-columns:minmax(0,1fr)}
 }
+
+/* iPhone rendering (fixed 28 Nov 2026). The design system's glows use filter: blur(150px) and blur(260px),
+   and its glass cards backdrop-filter: blur(140px). iPhone browsers (Safari and Chrome for iOS, both WebKit)
+   draw each of these into its own layer, which grows by several times the blur radius: several hundred MB
+   on this page. The live page took about 10 seconds to draw on an iPhone, showed white areas and reset
+   while scrolling. These rules switch the large blurs off and redraw each glow as a soft radial fade of
+   the same gradient, which needs no filter. tests/styles.test.js keeps it that way.
+   Unlike the rest of this file these rules are not scoped to a wb- class: they use the same selectors as
+   bundle.css so they win the cascade, and they should apply on both pages. */
+.lp-glow,.lp-glow--dark{filter:none}
+.lp-glow::before{inset:-25%;opacity:.5;clip-path:none;-webkit-mask-image:radial-gradient(closest-side,#000,transparent);mask-image:radial-gradient(closest-side,#000,transparent)}
+.lp-card,.lp-info--dark{-webkit-backdrop-filter:none;backdrop-filter:none}
+/* With no blur behind them, the audience cards need a little more fill to keep the photo quiet. */
+.wb-audience__item{background:color-mix(in srgb,var(--bg-surface-dark) 45%,transparent)}

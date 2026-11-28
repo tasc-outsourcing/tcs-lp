@@ -28,6 +28,7 @@ The no-slash paths redirect to the slash versions (`vercel.json`). Both pages ar
 | `assets/share-1200x630.jpg` | Open Graph and Twitter share image, 1200x630 |
 | `assets/saudization-webinar-2027.ics` | "Add to calendar" file: 15 Dec 2026, 08:00 to 09:00 UTC |
 | `tests/page.test.js` | Unit tests for `page.js` |
+| `tests/styles.test.js` | Checks that `page.css` switches off the design system's large blurs (see "iPhone rendering" below) |
 | `README.md` | This file |
 
 `scripts/build-multi-lp.sh` copies this folder to `dist/saudization-webinar-2027/` and then deletes `README.md` and `tests/` from the copy, so neither is served.
@@ -120,8 +121,14 @@ The GTM setup steps (LinkedIn conversion, Meta `Lead`, GA4) and the test registr
 From the repo root (Node 18 or later; no dependencies):
 
 ```bash
-node --test "Saudization Webinar 2027/tests/page.test.js"
+node --test "Saudization Webinar 2027/tests/page.test.js" "Saudization Webinar 2027/tests/styles.test.js"
 ```
+
+## iPhone rendering
+
+The design system's glows use `filter: blur(150px)` and `blur(260px)`, and its glass cards use `backdrop-filter: blur(140px)`. iPhone browsers (Safari, and Chrome for iOS, which uses the same engine) draw each of these into its own layer, and the layer grows by several times the blur radius. On this page that came to several hundred MB of graphics memory. After go-live on 28 Nov 2026, the page took about 10 seconds to draw on an iPhone, showed white areas and reset while scrolling.
+
+The end of `page.css` switches those blurs off and redraws each glow as a soft radial fade of the same gradient. `tests/styles.test.js` fails if a blur over 40px from `bundle.css` can reach the page again. Keep both if `bundle.css` is replaced with a newer copy of the design system.
 
 ## Preview locally
 
