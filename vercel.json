@@ -121,6 +121,14 @@
     {
       "source": "/thank-you-candidate/",
       "destination": "/thank-you-candidate/index.html"
+    },
+    {
+      "source": "/saudization-webinar-2027/",
+      "destination": "/saudization-webinar-2027/index.html"
+    },
+    {
+      "source": "/saudization-webinar-2027/thank-you/",
+      "destination": "/saudization-webinar-2027/thank-you/index.html"
     }
   ],
   "redirects": [
@@ -192,6 +200,16 @@
     {
       "source": "/thank-you-candidate",
       "destination": "/thank-you-candidate/",
+      "permanent": false
+    },
+    {
+      "source": "/saudization-webinar-2027",
+      "destination": "/saudization-webinar-2027/",
+      "permanent": false
+    },
+    {
+      "source": "/saudization-webinar-2027/thank-you",
+      "destination": "/saudization-webinar-2027/thank-you/",
       "permanent": false
     }
   ]

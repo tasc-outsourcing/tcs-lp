@@ -1,0 +1,97 @@
+/* TASC Landing Page Design System — generated from tokens.json */
+:root, [data-theme="light"] {
+  --bg-page: #ffffff;
+  --bg-surface-primary: #ffffff;
+  --bg-surface-secondary: #f7f9fa;
+  --bg-surface-tertiary: #dce3e6;
+  --bg-surface-dark: #121d21;
+  --bg-surface-grey: #1f2c31;
+  --bg-dark-top: #01354b;
+  --bg-brand: #005f83;
+  --bg-brand-secondary: #ffd100;
+  --bg-brand-tint-soft: #e6f5fa;
+  --brand-blue: #00bfff;
+  --brand-green: #45db33;
+  --text-primary: #121d21;
+  --text-secondary: #46565d;
+  --text-tertiary: #7b8e97;
+  --text-placeholder: #9fafb6;
+  --text-inverse: #ffffff;
+  --text-brand: #005f83;
+  --text-brand-secondary: #e6bc00;
+  --text-on-yellow: #2f3d43;
+  --border-primary: #dce3e6;
+  --border-secondary: #c2cdd2;
+  --border-hairline: #e4e4e2;
+  --border-brand: #005f83;
+  --border-dark: #1f2c31;
+  --border-on-dark: #46565d;
+  --border-white: #ffffff;
+  --icon-primary: #121d21;
+  --icon-secondary: #46565d;
+  --icon-inverse: #ffffff;
+  --icon-brand: #005f83;
+  --button-bg-primary: #005f83;
+  --button-bg-primary-hover: #005673;
+  --button-bg-secondary: #ffd100;
+  --button-bg-secondary-hover: #e6bc00;
+  --button-bg-tertiary: #cdebf5;
+  --button-bg-disabled: #dce3e6;
+  --button-text-primary: #ffffff;
+  --button-text-secondary: #121d21;
+  --button-text-link: #005f83;
+  --button-text-disabled: #7b8e97;
+  --input-bg-primary: #ffffff;
+  --input-border-enabled: #dce3e6;
+  --input-border-active: #005f83;
+  --input-text-label: #121d21;
+  --input-text-enabled: #121d21;
+  --input-text-placeholder: #5e7078;
+  --input-text-critical: #d05e5e;
+  --shadow-form: 0 12px 30px 0 rgba(0,0,0,0.08);
+  --shadow-chip: 0 0 40px 0 rgba(0,0,0,0.1);
+  --shadow-card-hover: 0 5px 30px 0 rgba(0,0,0,0.06);
+}
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 8px;
+  --spacing-lg: 12px;
+  --spacing-xl: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-100: 100px;
+  --container: 1140px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --font-heading: Montserrat, "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-body: Inter, "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+.h1 { font-family: var(--font-heading); font-size: 72px; line-height: 86px; font-weight: 700; }
+.h2 { font-family: var(--font-heading); font-size: 60px; line-height: 66px; font-weight: 700; }
+.h3 { font-family: var(--font-heading); font-size: 48px; line-height: 58px; font-weight: 700; }
+.h4 { font-family: var(--font-heading); font-size: 36px; line-height: 44px; font-weight: 600; }
+.h5 { font-family: var(--font-heading); font-size: 30px; line-height: 40px; font-weight: 600; }
+.h6 { font-family: var(--font-heading); font-size: 24px; line-height: 32px; font-weight: 600; }
+.subtitle { font-family: var(--font-heading); font-size: 20px; line-height: 30px; font-weight: 600; }
+.paragraph-large { font-family: var(--font-body); font-size: 18px; line-height: 28px; font-weight: 400; }
+.paragraph-medium { font-family: var(--font-body); font-size: 16px; line-height: 24px; font-weight: 400; }
+.paragraph-small { font-family: var(--font-body); font-size: 14px; line-height: 20px; font-weight: 400; }
+.caption { font-family: var(--font-body); font-size: 12px; line-height: 16px; font-weight: 500; }
+.label-large { font-family: var(--font-heading); font-size: 16px; line-height: 24px; font-weight: 600; }
+.label-medium { font-family: var(--font-heading); font-size: 14px; line-height: 20px; font-weight: 600; }
+.label-small { font-family: var(--font-heading); font-size: 12px; line-height: 16px; font-weight: 500; }
+.button-large { font-family: var(--font-heading); font-size: 18px; line-height: 28px; font-weight: 600; }
+.button-medium { font-family: var(--font-heading); font-size: 16px; line-height: 24px; font-weight: 600; }
+.button-small { font-family: var(--font-heading); font-size: 14px; line-height: 20px; font-weight: 600; }
+.button-xs { font-family: var(--font-heading); font-size: 12px; line-height: 16px; font-weight: 600; }
